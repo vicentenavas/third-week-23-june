@@ -1,0 +1,77 @@
+<body class="bg-società">
+  <section class="h-max  ">
+ <article class="flex grow lg:h-128 h-100 ">
+ <img src="assets/img/home/img30.jpg" alt="" class="object-cover w-full">
+ </article>
+ <body class="w-full px-6 lg:px-24  h-max justify-center flex flex-wrap">
+ <aside class="  lg:w-1/2 w-full">
+   <header class="grow  font-light text-3xl h-32 flex items-center justify-center ">Società</header>
+   
+   <div class="h-max  grow lg:px-4">
+ 
+     <article class="h-max border border-gray-400" *ngFor="let socio of socioList" >
+ <body class="">
+   <header class="text-xl border-b border-gray-500 font-semibold  px-4 h-12 flex items-center ">{{socio.name}}</header>
+   <main class="px-4 h-max  py-4 space-y-2">
+     <h1>{{socio.description[0].text}}</h1>
+     <h1>{{socio.description[1].text}}</h1>
+   </main>
+   <footer class="px-4  py-8">
+    <a [routerLink]="['/socio', socio.id]">See more information</a>
+   </footer>
+ </body>
+     </article>
+     <footer class="h-max grow py-12" *ngIf="contactList "> 
+       <div  class=" border-black py-5 flex space-x-4">
+         <h1 class="font-bold">Phone:</h1>
+         <h1>{{contactList[0].info}}</h1>
+       </div>
+       <div  class="border-y border-black py-5 flex space-x-4">
+         <h1 class="font-bold">Email:</h1>
+         <h1>{{contactList[1].info}}</h1>
+       </div>
+       <div  class=" border-black py-5 flex space-x-4">
+         <h1 class="font-bold">Fax:</h1>
+         <h1>{{contactList[2].info}}</h1>
+       </div>
+       <div  class="border-y border-black py-5 flex space-x-4">
+         <h1 class="font-bold">Indirizzo:</h1>
+         <h1>{{contactList[3].info}}</h1>
+       </div>
+         </footer>
+   </div>
+ 
+ </aside> 
+ 
+ 
+ 
+ <div class="grow h-max lg:pt-32 py-12 px-12  xl:text-lg w-1/2 2xl:space-y-3 space-y-2 font-light">
+   <p>La società è certificata UNI EN ISO 9001:2008 da TUV CERT.
+     STEA Progetto è una società ESCO e come tale opera nel settore energetico per conto proprio e per conto terzo, facendo propria la missione del risparmio energetico e della rendicontazione dello stesso.</p>
+     
+     <p>La società è certificata UNI CEI 11352:2014 da BUREAU VERITAS.</p>
+     
+     <p>Il Direttore Tecnico possiede la certificazione di EGE “Esperto in Gestione dell’Energia” in conformità alla norma UNI CEI 11339:2009 – settore Civile e Industriale – certificato n. 16-03261</p>
+     
+     <p>La Società risulta socia del Consorzio Habitech (Distretto Tecnologico Trentino) che ha come obbiettivi:</p>
+     
+     <p>1: Catalizzare l’innovazione secondo una logica di rete: il Distretto Energia Ambiente promuove l’interazione tra mondo della ricerca e mondo delle imprese, per il consolidamento di una economia della conoscenza e favorisce l’insediamento sul territorio di imprese innovative operanti nei settori di pertinenza del Distretto.</p>
+     
+     <p>2: Sviluppare innovazione tecnologica spendibile sui mercati: Habitech si propone di generare un circuito virtuoso di innovazione tecnologica di prodotto e di processo, a partire dalla costruzione di standard più avanzati, fino alla progettazione di percorsi formativi per i tecnici delle imprese e favorisce la consapevolezza dei consumatori e, in particolare, la crescita di un mercato del “comfort abitativo sostenibile”.</p>
+     
+     <p>3: Produrre benefici tangibili sul territorio: intende accelerare l’adozione di un modello di business basato sull’integrazione di edilizia sostenibile, gestione intelligente del territorio ed energie rinnovabili.</p>
+     
+ <h1>
+   Il distretto tecnologico e il progetto di fare del Trentino un polo di eccellenza nel settore delle tecnologie sostenibili hanno raccolto attorno a sé la convinta adesione di istituzioni ed enti pubblici e di oltre 150 soggetti privati (imprese, gruppi e consorzi che rappresentano circa 300 operatori e 8.000 addetti).I principi cardine del Distretto Energia Ambiente sono condivisi dal sistema trentino nel suo insieme. A fianco delle imprese, infatti, sono attivi nel Distretto la Provincia Autonoma di Trento, l’Università di Trento, l’Istituto Agrario San Michele all’Adige, il laboratorio IRST della Fondazione Bruno Kessler, l’Istituto per la valorizzazione delle risorse forestali del CNR (IVALSA), Trentino Sviluppo (la società impegnata nel favorire lo sviluppo economico e imprenditoriale del territorio).Habitech, il Distretto Energia Ambiente, è il distretto tecnologico creato dalla Provincia Autonoma di Trento e riconosciuto dal Ministero dell’Università e della Ricerca allo scopo di favorire la nascita di una filiera specializzata in edilizia sostenibile, produzione di energia da fonti rinnovabili e tecnologie intelligenti per la gestione del territorio.Habitech agisce sul territorio trentino, in modo tale da accelerare l’adozione di modelli di business basati sulla sostenibilità e di attrarre imprese innovative, specializzate in “tecnologie verdi”.
+ </h1>  
+ </div>
+ </body>
+ 
+  </section>
+ 
+ 
+   
+ 
+   <app-on-top-button></app-on-top-button>
+ 
+ </body>

@@ -1,0 +1,21 @@
+<body class=" h-screen">
+    <section class="lg:flex flex-wrap lg:flex-nowrap h-full w-full">
+        <article class="lg:w-3/4  h-4/6 self-center ">
+            <form class="flex flex-col space-y-1">
+                <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                <input type="text" id="name"  class="border py-4 px-8 rounded-lg" placeholder="None:" required />
+                <input type="email" id="surname"  class="border py-4 px-8 rounded-lg " placeholder="Cognome:" required/>
+                <input type="message" id="mail"  class="border py-4 px-8 rounded-lg "  placeholder="mail:" />
+                <textarea type="text" id="messaje"  class="border py-12 px-8 rounded-lg " rows="7" placeholder="messaggio:" required></textarea>
+                <button type="submit" [disabled]="!mailForm.valid" class="bg-black text-white py-4 rounded-md hover:bg-gray-900">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                    Submit
+                </button>
+            </form>
+        </article>
+        <aside class="grow h-4/6 self-center w">
+                <img src="assets\img\home\undraw_Contact_us_re_4qqt.png" alt="" class="object-cover h-full">
+        </aside>
+    </section>
+
+</body>
